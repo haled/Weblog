@@ -11,9 +11,9 @@ This application is a weblog (blog) application. The intention of this project i
 1. Create POST endpoint to create a blog entry.
 1. Create GET endpoint to create a blog entry.
 1. UI Spike.
-  1. Determine technology to use (probably Angular, but worth looking at Vue.js).
-  1. Lay out Post creation UI.
-  1. Lay out Post viewing UI.
+    1. Determine technology to use (probably Angular, but worth looking at Vue.js).
+    1. Lay out Post creation UI.
+    1. Lay out Post viewing UI.
 1. Create Post creation UI.
 1. Create Post viewing UI.
 
