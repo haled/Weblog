@@ -25,3 +25,36 @@ This application is a weblog (blog) application. The intention of this project i
   * Azure Blog Storage
   * Files in a git repo
 
+# Wild Exploration
+* Git interaction with Jupyter notebooks
+    * can blog posts be saved as Jupyter notebooks in git and rendered?
+    * Get "post"
+    * Save "post"
+    * Render "post"
+    * would probably need some kind of menu and catalog system for the posts
+    * could be an interesting research tool
+* Markdown mixed with interactive C# (code) gists
+* Alternate set of methods
+    * Get catalog
+    * get post
+    * create post
+    * render post (in UI)
+    * data model
+        * CatalogItem
+            * Title
+            * Date
+            * Author
+            * Content
+            * ItemType
+            * IsPublic?
+            * SupportsComments
+            * CommentList
+        * Catalog
+            * List of CatalogItems
+        * ItemType
+            * Post
+            * Comment
+        * User
+            * Name
+            * ID
+            * Privileges
