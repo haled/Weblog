@@ -6,16 +6,56 @@ This application is a weblog (blog) application. The intention of this project i
 * Experience software deployment and maintenance in a prod-like environment.
 
 # To Do
-1. Design data model and repository.
-1. Design URL endpoints.
-1. Create POST endpoint to create a blog entry.
-1. Create GET endpoint to create a blog entry.
-1. UI Spike.
-    1. Determine technology to use (probably Angular, but worth looking at Vue.js).
-    1. Lay out Post creation UI.
-    1. Lay out Post viewing UI.
-1. Create Post creation UI.
-1. Create Post viewing UI.
+- [X] Design data model and repository.
+- [X] Design URL endpoints.
+- [ ] Create in-memory test of API. (like Postman)
+- [ ] Create POST endpoint to create a blog entry.
+- [ ] Create GET endpoint to create a blog entry.
+- [ ] UI Spike.
+    - [ ] Determine technology to use (probably Angular, but worth looking at Vue.js).
+    - [ ] Lay out Post creation UI.
+    - [ ] Lay out Post viewing UI.
+- [ ] Create Post creation UI.
+- [ ] Create Post viewing UI.
+
+# Design Considerations
+This is just my design scratch pad to get started.
+## Data Model
+Post
+  ID
+  DateCreated
+  Content
+  Author
+  Title
+  Tags
+  Comments
+
+Comment
+  ID
+  PostID
+  DateCreated
+  Author
+  Title
+  Content
+
+Author
+    ID
+    FirstName
+    LastName
+    UserName (?)
+
+Tag
+  ID
+  Title
+
+## URL Endpoints
+weblog/api/v1/posts GET
+
+weblog/api/v1/posts/{ID}    GET PUT POST
+
+weblog/api/v1/posts/{ID}/comments   GET
+
+weblog/api/v1/posts/{ID}/comments/{ID}  GET PUT POST
 
 # Future Considerations
 * Support comments.
