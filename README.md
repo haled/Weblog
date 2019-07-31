@@ -9,8 +9,8 @@ This application is a weblog (blog) application. The intention of this project i
 - [X] Design data model and repository.
 - [X] Design URL endpoints.
 - [ ] Create in-memory test of API. (like Postman)
-- [ ] Create POST endpoint to create a blog entry.
-- [ ] Create GET endpoint to create a blog entry.
+- [X] Create POST endpoint to create a blog entry.
+- [X] Create GET endpoint to get a blog entry.
 - [ ] UI Spike.
     - [ ] Determine technology to use (probably Angular, but worth looking at Vue.js).
     - [ ] Lay out Post creation UI.

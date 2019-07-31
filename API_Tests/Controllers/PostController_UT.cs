@@ -5,14 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 using API.Controllers;
 using API.Models;
 
-namespace API_Tests
+namespace API_Tests.Controllers
 {
     public class PostController_UT
     {
         [Fact]
         public void GetPostsReturnsAListOfPosts()
         {
-            var controller = new PostController();
+            var controller = new PostController(new PostRepository());
             var result = controller.GetPosts();
             var okResult = Assert.IsType<OkObjectResult>(result);
             var returnedList = Assert.IsAssignableFrom<IList<string>>(okResult.Value);
@@ -30,11 +30,12 @@ namespace API_Tests
                 Author = "Me"
             };
 
-            var controller = new PostController();
+            var controller = new PostController(new PostRepository());
             var result = controller.CreatePost(testPost);
             var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnedValue = Assert.IsAssignableFrom<int>(okResult.Value);
-            Assert.True(returnedValue > 0);
+            var returnedValue = Assert.IsAssignableFrom<Post>(okResult.Value);
+            Assert.Equal("Test Post", returnedValue.Title);
+            Assert.True(returnedValue.ID > 0);
         }
     }
 }

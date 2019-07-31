@@ -11,6 +11,13 @@ namespace API.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
+        private IPostRepository _postRepository;
+
+        public PostController(IPostRepository repo)
+        {
+            _postRepository = repo;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult GetPosts()
@@ -29,7 +36,8 @@ namespace API.Controllers
         [HttpPost]
         public ActionResult CreatePost([FromBody] Post value)
         {
-            return Ok(0);
+            var savedPost = _postRepository.SavePost(value);
+            return Ok(savedPost);
         }
 
         // // PUT api/values/5
