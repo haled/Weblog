@@ -12,11 +12,19 @@ This application is a weblog (blog) application. The intention of this project i
 - [X] Create POST endpoint to create a blog entry.
 - [X] Create GET endpoint to get a blog entry.
 - [ ] UI Spike.
-    - [ ] Determine technology to use (probably Angular, but worth looking at Vue.js).
+    - [X] Determine technology to use (probably Angular, but worth looking at Vue.js).
+    - [X] Install Angular: https://angular.io/guide/setup-local
+      - [X] Install Angular:  npm install -g @angular/cli
+    - [ ] Tour of Heroes
+      - [X] Create base application
+      - [ ] Pick Up at: Master/Detail
+    - [ ] Create workspace:  ng new weblog 
     - [ ] Lay out Post creation UI.
     - [ ] Lay out Post viewing UI.
 - [ ] Create Post creation UI.
 - [ ] Create Post viewing UI.
+- [ ] Create data store.
+- [ ] Create repository to hit data store.
 
 # Design Considerations
 This is just my design scratch pad to get started.
