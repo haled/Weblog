@@ -17,7 +17,7 @@ This application is a weblog (blog) application. The intention of this project i
       - [X] Install Angular:  npm install -g @angular/cli
     - [ ] Tour of Heroes
       - [X] Create base application
-      - [ ] Pick Up at: Master/Detail
+      - [ ] Pick Up at: 3. Master/Detail
     - [ ] Create workspace:  ng new weblog 
     - [ ] Lay out Post creation UI.
     - [ ] Lay out Post viewing UI.
